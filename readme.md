@@ -9,3 +9,4 @@
 * fact.py -- tornado中使用多线程、接口返回json示例
 * hello.py -- cookie使用示例
 * run.py -- 自定义类似django的路由
+* auth.py -- 登录产生cookie，并使用cookie进行后续验证
