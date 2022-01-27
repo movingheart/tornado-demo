@@ -6,6 +6,7 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         if not self.get_cookie("mycookie"):
             self.set_cookie("mycookie", "myvalue")
+            self.set_cookie("mydomain", "wst.com", domain="wst.com", expires_days=1)
             self.write("Hello, world.<br> Your cookie was not set!")
         else:
             self.write("Your cookie was set!")
